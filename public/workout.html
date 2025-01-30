@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workout Builder</title>
+    <link rel="stylesheet" href="workoutstyle.css">
+</head>
+<body>
+    <header>
+        <h1>AI Workout Builder</h1>
+    </header>
+    <main>
+        <form id="workoutForm">
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="goal">Goal:</label>
+                <select id="goal" name="goal">
+                    <option value="">Select Goal</option>
+                    <option value="lose_weight">Lose Weight</option>
+                    <option value="build_muscle">Build Muscle</option>
+                    <option value="increase_endurance">Increase Endurance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience">
+                    <option value="">Select Experience</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="equipment">Available Equipment:</label>
+                <input type="text" id="equipment" name="equipment">
+            </div>
+            <div class="form-group">
+                <label for="days">Days to Workout per Week:</label>
+                <input type="number" id="days" name="days" min="1" max="7">
+            </div>
+            <div class="form-group">
+                <label for="length">Length of Workout (minutes):</label>
+                <input type="number" id="length" name="length" min="15" max="120">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <button type="submit" id="runButton">Run</button>
+            </div>
+        </form>
+        <div id="results"></div>
+        <a href="index.html">Back to Home</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 GymBro. All rights reserved.</p>
+    </footer>
+    <script src="workout.js"></script>
+</body>
+</html>
