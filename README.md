@@ -1,15 +1,16 @@
----
+🤝 Let's Connect
+Hi, I'm Theerapong — a 3rd year Computer Engineering student from SWU.
+This project, GymBro, is a web app that helps users improve their workout form using AI-based pose detection and gives real-time feedback.
 
-## 🤝 Let's Connect
+If you're interested in:
 
-[![GitHub](https://img.shields.io/badge/GitHub-@thpprl-181717?style=for-the-badge&logo=github)](https://github.com/thpprl)
-[![Email](https://img.shields.io/badge/Email-theerapong.rermluk@gmail.com-red?style=for-the-badge&logo=gmail)](mailto:theerapong.rermluk@gmail.com)
-Hi, I'm Theerapong — a 3rd year Computer Engineering student passionate about:
-- 💡 Building AI-powered fitness & health tech tools
-- 📹 Pose detection, movement analysis, and real-time feedback
-- 🧩 Web applications with clean UI and scalable backend
+💡 AI for health & fitness
 
-If you find this project helpful or interesting,  
-feel free to follow, star ⭐, or reach out — I'd love to connect and collaborate!
+🧠 Real-time movement analysis
 
----
+🌐 Web app development with clean UI
+
+Feel free to follow me on GitHub: @thpprl
+Or reach out via email: theerapong.rermluk@gmail.com
+
+Let’s connect and build something impactful together! 🚀
