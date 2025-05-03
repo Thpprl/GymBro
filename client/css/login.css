@@ -1,0 +1,93 @@
+/* ======== LOGIN PAGE STYLES ======== */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--spacing-xl) var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-lg);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.login-page {
+  background: linear-gradient(135deg, var(--gray-700) 0%, var(--gray-800) 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ======== LOGIN FORM ======== */
+.login-form .form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: white;
+}
+
+.login-subtitle {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: var(--gray-300);
+}
+
+.login-button {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-sm);
+  font-size: 0.9rem;
+  color: var(--gray-300);
+}
+
+.login-options a {
+  color: var(--primary-red-light);
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.login-options a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  color: var(--gray-300);
+}
+
+.register-link a {
+  color: var(--primary-red-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-normal);
+}
+
+.register-link a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 480px) {
+  .login-container {
+    padding: var(--spacing-lg);
+    width: 90%;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+  }
+}

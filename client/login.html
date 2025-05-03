@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เข้าสู่ระบบ | GymBro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2 class="login-title">🔐 เข้าสู่ระบบ GymBro</h2>
+    <p class="login-subtitle">ยินดีต้อนรับกลับ! เข้าสู่ระบบเพื่อจัดการแผนออกกำลังกายของคุณ</p>
+    
+    <form id="loginForm" class="login-form">
+      <div class="form-group">
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" required />
+      </div>
+      
+      <button type="submit" class="btn login-button">เข้าสู่ระบบ</button>
+      
+      <div class="login-options">
+        <a href="#">ลืมรหัสผ่าน?</a>
+      </div>
+    </form>
+
+    <div class="register-link">
+      <p>ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p>
+    </div>
+    
+    <a href="index.html" class="back-to-home">🏠 กลับหน้าหลัก</a>
+
+    <div id="loginStatus" style="margin-top: 15px;"></div>
+  </div>
+
+  <script src="js/login.js" defer></script>
+</body>
+</html> 

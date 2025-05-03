@@ -1,0 +1,192 @@
+/* ======== WORKOUT & ANALYSIS CONTAINERS ======== */
+.analysis-container, .workout-card, .result-card {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-md);
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.analysis-container {
+  padding: var(--spacing-xl);
+}
+
+.workout-card, .result-card {
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  border-top: 4px solid var(--primary-red);
+}
+
+/* ======== VIDEO ANALYSIS SECTION ======== */
+.video-analysis-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.video-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-md);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  background-color: var(--gray-200);
+  border-radius: var(--border-radius-md);
+  display: block;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pose-status {
+  position: absolute;
+  bottom: var(--spacing-sm);
+  left: var(--spacing-sm);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 8px 15px;
+  box-shadow: var(--box-shadow-sm);
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.status-light {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: var(--transition-normal);
+}
+
+.status-light.waiting {
+  background-color: #f39c12;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+}
+
+.status-light.correct {
+  background-color: #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+.status-light.incorrect {
+  background-color: var(--primary-red);
+  box-shadow: 0 0 10px rgba(231, 111, 81, 0.5);
+}
+
+/* ======== FEEDBACK PANEL ======== */
+.feedback-panel {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-md);
+  padding: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: var(--spacing-md);
+}
+
+.feedback-panel h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.feedback-content {
+  padding: var(--spacing-md);
+  background: var(--gray-100);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ======== WORKOUT PLAN ======== */
+.workout-plan {
+  background-color: var(--gray-100);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  line-height: 1.8;
+}
+
+.day-card {
+  background-color: white;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  box-shadow: var(--box-shadow-sm);
+  border-left: 3px solid var(--primary-red);
+}
+
+.day-title {
+  font-weight: 600;
+  color: var(--primary-red);
+  margin-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--gray-200);
+  padding-bottom: 5px;
+}
+
+.workout-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--gray-200);
+}
+
+.workout-item:last-child {
+  border-bottom: none;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 768px) {
+  .analysis-container {
+    padding: var(--spacing-md);
+  }
+  
+  .workout-card, .result-card {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .workout-card, .result-card {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* ======== DARK MODE ======== */
+@media (prefers-color-scheme: dark) {
+  canvas {
+    background-color: #333;
+  }
+  
+  .feedback-content {
+    background: #333;
+  }
+  
+  .workout-plan {
+    background-color: #333;
+  }
+  
+  .day-card {
+    background-color: #2a2a2a;
+  }
+  
+  .pose-status {
+    background: rgba(40, 40, 40, 0.9);
+  }
+}

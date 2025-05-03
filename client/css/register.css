@@ -1,0 +1,92 @@
+/* ======== REGISTER PAGE STYLES ======== */
+.register-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--spacing-xl) var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-lg);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.register-page {
+  background: linear-gradient(135deg, var(--gray-700) 0%, var(--gray-800) 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ======== REGISTER FORM ======== */
+.register-form .form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: white;
+}
+
+.register-subtitle {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: var(--gray-300);
+}
+
+.register-button {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+
+.terms-agreement {
+  font-size: 0.9rem;
+  color: var(--gray-300);
+  margin-top: var(--spacing-md);
+  text-align: center;
+}
+
+.terms-agreement a {
+  color: var(--primary-red-light);
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.terms-agreement a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.back-to-login {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  color: var(--gray-300);
+}
+
+.back-to-login a {
+  color: var(--primary-red-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-normal);
+}
+
+.back-to-login a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 480px) {
+  .register-container {
+    padding: var(--spacing-lg);
+    width: 90%;
+  }
+  
+  .register-title {
+    font-size: 1.8rem;
+  }
+}

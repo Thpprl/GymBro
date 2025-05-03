@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สมัครสมาชิก | GymBro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/register.css" />
+</head>
+<body class="register-page">
+  <div class="register-container">
+    <h2 class="register-title">📝 สมัครสมาชิก GymBro</h2>
+    <p class="register-subtitle">สมัครสมาชิกเพื่อเริ่มการเดินทางสู่สุขภาพที่ดีของคุณ</p>
+    
+    <form id="registerForm" class="register-form">
+      <div class="form-group">
+        <label for="name">ชื่อผู้ใช้:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" required />
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirmPassword" required />
+      </div>
+
+      <button type="submit" class="btn register-button">สมัครสมาชิก</button>
+    </form>
+
+    <div class="terms-agreement">
+      <p>เมื่อคลิกปุ่ม "สมัครสมาชิก" คุณยอมรับ <a href="#">เงื่อนไขการใช้งาน</a> และ <a href="#">นโยบายความเป็นส่วนตัว</a> ของเรา</p>
+    </div>
+
+    <div class="back-to-login">
+      <p>มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+    </div>
+    
+    <a href="index.html" class="back-to-home">🏠 กลับหน้าหลัก</a>
+
+    <div id="registerStatus" style="margin-top: 15px;"></div>
+  </div>
+
+  <script src="js/register.js" defer></script>
+</body>
+</html>

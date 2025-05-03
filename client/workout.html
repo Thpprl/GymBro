@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎯 สร้างแผนออกกำลังกายด้วย AI | GymBro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/workoutstyle.css" />
+</head>
+<body>
+ 
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">🏋️‍♂️ GymBro</div>
+      <ul class="nav-links">
+        <li><a href="index.html">🏠 หน้าแรก</a></li>
+        <li><a href="home.html">📊 วิเคราะห์ท่าทาง</a></li>
+        <li><a href="workout.html">💪 สร้างแผน</a></li>
+        <li><a href="login.html">🔐 เข้าสู่ระบบ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1 class="page-title">🎯 สร้างแผนออกกำลังกายด้วย AI</h1>
+
+    <div class="workout-card">
+      <div class="form-title">กรอกข้อมูลเพื่อสร้างแผน</div>
+      <form id="aiWorkoutForm">
+        <div class="form-group">
+          <label for="goal">เป้าหมาย:</label>
+          <select id="goal" required>
+            <option value="lose_weight">ลดน้ำหนัก</option>
+            <option value="build_muscle">เพิ่มกล้ามเนื้อ</option>
+            <option value="increase_endurance">เพิ่มความทนทาน</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">เพศ:</label>
+          <select id="gender" required>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+          </select>
+        </div>
+
+    <div>
+          <label for="age">อายุ:</label>
+          <input type="number" id="age" min="10" max="100" required>
+        </div>
+
+        <div class="form-group">
+    </div>
+
+        <div class="form-group">
+          <label for="weight">น้ำหนัก (กก.):</label>
+          <input type="number" id="weight" min="30" max="200" required>
+        </div>
+
+        <div class="form-group">
+          <label for="height">ส่วนสูง (ซม.):</label>
+          <input type="number" id="height" min="130" max="250" required>
+        </div>
+
+        <div class="form-group">
+          <label for="experience">ระดับความชำนาญ:</label>
+          <select id="experience" required>
+            <option value="beginner">มือใหม่</option>
+            <option value="intermediate">ระดับกลาง</option>
+            <option value="advanced">เชี่ยวชาญ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="equipment">อุปกรณ์ที่มี:</label>
+          <input type="text" id="equipment" placeholder="เช่น ดัมเบล, เสื่อโยคะ">
+        </div>
+
+        <div class="form-group">
+          <label for="days">จำนวนวันที่ออกกำลังกาย/สัปดาห์:</label>
+          <input type="number" id="days" min="1" max="7" required>
+        </div>
+
+        <div class="form-group">
+          <label for="duration">ระยะเวลาในแต่ละวัน (นาที):</label>
+          <input type="number" id="duration" min="15" max="120" required>
+        </div>
+
+        <button type="submit" class="btn">🚀 สร้างแผนด้วย AI</button>
+
+        <div id="loading-spinner" class="loading-spinner" style="display: none;">
+          <img src="https://i.gifer.com/YCZH.gif" alt="loading..." />
+          <div class="loading-text">กำลังสร้างแผนจาก AI...</div>
+        </div>
+      </form>
+    </div>
+
+    <div id="aiPlanResult"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2024 GymBro | Empower Your Workout 💥</p>
+  </footer>
+
+  <script src="js/workout.js" defer></script>
+</body>
+</html>

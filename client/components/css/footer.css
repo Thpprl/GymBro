@@ -1,0 +1,21 @@
+.site-footer {
+  background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Prompt', sans-serif;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+}
+
+.site-footer::before {
+  content: \"💪\";
+  position: absolute;
+  font-size: 12rem;
+  opacity: 0.03;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
